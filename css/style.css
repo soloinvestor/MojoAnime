@@ -1195,12 +1195,19 @@ section{
 }
 
 /* Dark gradient for readability */
-.hero .slide::before{
+..hero .slide::before{
+   content: '';
+   position: absolute;
+   inset: 0;
+
    background: linear-gradient(
       to right,
-      rgba(0,0,0,0.95) 20%,
-      rgba(0,0,0,0.7) 40%,
-      rgba(0,0,0,0.3) 60%,
-      transparent 80%
+      rgba(0,0,0,0.85) 20%,
+      rgba(0,0,0,0.5) 45%,
+      rgba(0,0,0,0.2) 65%,
+      transparent 85%
    );
+
+   z-index: 1;
+}
 }
