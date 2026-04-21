@@ -302,29 +302,34 @@ section{
 }
 
 .hero .slide::before{
-    content: '';
-    background: linear-gradient(
-        to right,
-        rgba(0,0,0,1) 50%,
-        rgba(0,0,0,0.7) 70%,
-        rgba(0,0,0,0.3) 85%,
-        transparent 100%
-    );
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: 1;
+   content: '';
+   position: absolute;
+   top: 0; left: 0; right: 0; bottom: 0;
+
+   background: linear-gradient(
+      to left,
+      rgba(0,0,0,0.8) 10%,
+      rgba(0,0,0,0.6) 30%,
+      rgba(0,0,0,0.2) 60%,
+      transparent 90%
+   );
+
+   z-index: 1;
 }
 
 .hero .slide .content{
    height: 100vh;
    display: flex;
    align-items: center;
-   justify-content: flex-start;   
-   padding-left: 2rem;             
+   justify-content: flex-end; /* 🔥 push content to right */
+   padding-right: 5%; /* spacing from edge */
    position: relative;
    z-index: 2;
 }
 
+.hero .slide .content > div{
+   max-width: 500px;
+}
 .hero .slide .content span{
    color: var(--main-color);
    font-size: 2rem;
