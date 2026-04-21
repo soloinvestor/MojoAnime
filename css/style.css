@@ -92,15 +92,25 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    width: 100%;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+   .left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 0;   
 }
 
-.header .flex .search-form{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40rem;
+.header .search-form{
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto;   
+}
+
+.header .btn{
+    text-align: right;
+    margin-left: auto;   
 }
 #menu-btn{
    font-size: 2.5rem;
