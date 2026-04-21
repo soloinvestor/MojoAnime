@@ -330,7 +330,6 @@ section{
    width: 40%;
    z-index: 2;
 }
-}
 .hero .slide .content span{
    color: var(--main-color);
    font-size: 2rem;
