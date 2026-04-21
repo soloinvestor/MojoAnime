@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demon-slayer",
+    "title": "Demon Slayers",
+    "episodes": [
+      {
+        "ep": 1,
+        "servers": [
+          "images/vid.mp4"
+        ]
+      }
+    ]
+  }
+]
