@@ -77,9 +77,12 @@ section{
    border-bottom: .1rem solid rgba(255,255,255,.2);
 }
 
+/* HEADER */
 .header{
    position: sticky;
-   top: 0; left: 0; right: 0;
+   top: 0;
+   left: 0;
+   right: 0;
    z-index: 1000;
 }
 
@@ -89,75 +92,74 @@ section{
 }
 
 .header .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 1rem 3rem;
-}
-   .left{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex: 1;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   padding: 1rem 3rem;
 }
 
-.header .search-form{
-    flex: 1;
-    max-width: 500px;
-    margin: 0 auto;
-}  
-
-
-.header .btn{
-    text-align: right;
-    margin-left: auto;   
-}
-#menu-btn{
-   font-size: 2.5rem;
-   cursor: pointer;
-   color: var(--main-color);
-   margin-right: 1rem;
-}
-
-
-.header .flex .logo {
-   font-size: 2.5rem;
-   font-weight: bold;
-   font-style:italic ;
-   color: var(--white);
-}
-
-.header .btn{
-    margin-left: auto;
-    text-align: right;
-}
-
-.header .flex .search-form{
+.left{
    display: flex;
    align-items: center;
    gap: 1rem;
 }
 
-.header .flex .search-bar{
-   padding: 1rem 1.5rem;
-   background: var(--light-black);
-   border-radius: .5rem;
-   display: flex;
-   align-items: center;
-  width: 100%;
-max-width: 500px;
-}
-
-.header .flex .search-bar .box{
-   width: 100%;
-   background: none;
-   font-size: 1.8rem;
+.header .logo{
+   font-size: 2.5rem;
+   font-weight: bold;
+   font-style: italic;
    color: var(--white);
 }
 
-.header .flex .search-bar .box::-webkit-search-cancel-button{
-   appearance:none;
+#menu-btn{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color: var(--main-color);
+}
+
+.header .search-form{
+   margin: 0 auto;
+   width: 100%;
+   max-width: 500px;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.header .search-bar{
+   flex: 1;
+   display: flex;
+   align-items: center;
+   background: var(--light-black);
+   border-radius: .5rem;
+   padding: 0.8rem 1rem;
+}
+
+.header .search-bar .box{
+   width: 100%;
+   background: none;
+   color: var(--white);
+   font-size: 1.6rem;
+}
+
+.header .search-bar label{
+   color: var(--white);
+   cursor: pointer;
+}
+
+.header .search-form a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 4rem;
+   height: 4rem;
+   background: var(--light-black);
+   border-radius: .5rem;
+   color: var(--white);
+}
+
+.header .btn{
+   margin-left: auto;
 }
 
 .header .flex .search-bar label{
