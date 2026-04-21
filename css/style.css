@@ -1167,144 +1167,8 @@ section{
 
    }
 
-/* FINAL HEADER FIX (WORKING) */
+/* ===== CLEAN FINAL HERO (WORKING) ===== */
 
-.header{
-   width: 100%;
-}
-
-.header .flex{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   width: 100%;
-   padding: 1rem 2rem;
-}
-
-.left{
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-.header .search-form{
-   flex: 1;
-   display: flex;
-   justify-content: center;
-}
-
-.header .search-bar{
-   width: 100%;
-   max-width: 400px;
-}
-
-.header .btn{
-   margin-left: auto;
-}
-/* ===== FORCE FULL EDGE HEADER ===== */
-
-.header{
-   width: 100%;
-   padding: 0; /* remove inherited padding */
-}
-
-.header .flex{
-   width: 100%;
-   padding: 0 1rem; /* optional small spacing */
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-/* LEFT SIDE */
-.header .left{
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-
-/* CENTER SEARCH */
-.header .search-form{
-   flex: 1;
-   display: flex;
-   justify-content: center;
-   max-width: 500px;
-   margin: 0 auto;
-}
-
-/* RIGHT LOGIN */
-.header .btn{
-   flex-shrink: 0;
-}
-
-/* REMOVE GLOBAL SECTION EFFECT */
-.header section,
-.header .flex{
-   max-width: 100% !important;
-}
-/* ===== FINAL HERO FIX ===== */
-
-.hero .slide .content{
-   display: flex !important;
-   justify-content: flex-end !important; /* push to right */
-   align-items: center;
-   height: 100vh;
-   padding-right: 8% !important;
-}
-
-/* limit text width */
-.hero .slide .content > *{
-   max-width: 500px;
-}
-
-/* make sure background goes right */
-.hero .slide{
-   background-position: right center !important;
-   background-size: cover;
-}
-/* ===== FORCE RIGHT SIDE HERO ===== */
-
-.hero .slide{
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   min-height: 100vh;
-   background-size: cover;
-   background-position: right center;
-}
-
-.hero .slide .content{
-   width: 100%;
-   display: flex;
-   justify-content: flex-end;
-   padding-right: 8%;
-}
-
-.hero .slide .text-box{
-   max-width: 500px;
-   text-align: left;
-}
-/* ===== FINAL WORKING HERO FIX ===== */
-
-.hero .slide{
-   position: relative;
-   min-height: 100vh;
-   background-size: cover;
-   background-position: right center;
-}
-
-/* MOVE TEXT TO RIGHT */
-.hero .slide .content{
-   position: absolute;
-   top: 50%;
-   right: 8%;
-   transform: translateY(-50%);
-   width: 500px;
-   z-index: 2;
-}
-/* ===== FINAL CLEAN HERO FIX ===== */
-
-/* HERO IMAGE */
 .hero .slide{
    position: relative;
    min-height: 100vh;
@@ -1316,14 +1180,14 @@ section{
    background-repeat: no-repeat;
 }
 
-/* TEXT (LEFT SIDE CLEAN) */
+/* TEXT LEFT SIDE */
 .hero .slide .content{
    width: 50%;
    padding-left: 6%;
    z-index: 2;
 }
 
-/* DARK OVERLAY (LEFT ONLY) */
+/* DARK OVERLAY LEFT */
 .hero .slide::before{
    content: '';
    position: absolute;
