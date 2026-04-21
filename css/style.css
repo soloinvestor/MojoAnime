@@ -309,10 +309,10 @@ section{
 
    background: linear-gradient(
       to right,
-      rgba(0,0,0,0.95) 15%,
-      rgba(0,0,0,0.75) 40%,
-      rgba(0,0,0,0.3) 70%,
-      transparent 90%
+      rgba(0,0,0,0.85) 20%,
+      rgba(0,0,0,0.5) 45%,
+      rgba(0,0,0,0.2) 65%,
+      transparent 85%
    );
 
    z-index: 1;
