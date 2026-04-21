@@ -1210,4 +1210,28 @@ section{
 
    z-index: 1;
 }
+/* WATCH PAGE HEADER FIX */
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header .left{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.header .search-form{
+   flex: 1;
+   margin: 0 2rem;
+   max-width: 500px;
+}
+
+.header .btn.login-btn{
+   background: var(--main-color);
+   color: var(--black);
+   padding: .6rem 1.5rem;
+   border-radius: .5rem;
 }
