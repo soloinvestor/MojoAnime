@@ -3,10 +3,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home</title>
+   <title>MojoAnime</title>
+
+   <!-- 🔥 IMPORTANT FIX -->
+   <base href="/MojoAnime/">
 
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -18,18 +20,19 @@
 
       <div class="logo">
          <div id="menu-btn" class="fas fa-bars-staggered"></div>
-         <a href="home.html">OTAKU</a>
+         <!-- ✅ BRAND FIX -->
+         <a href="index.html">MojoAnime</a>
       </div>
    
       <div class="search-form">
          <form action="" class="search-bar">
-            <input type="search" id="searchBox" class="box" placeholder="search anime...">
+            <input type="search" id="searchBox" class="box" placeholder="Search anime...">
             <label for="searchBox" class="fas fa-search"></label>
          </form>
          <a href="filter.html" class="fas fa-filter"></a>
       </div>
 
-      <a href="login.html" class="btn"><i class="fas fa-user"></i> login</a>
+      <a href="login.html" class="btn"><i class="fas fa-user"></i> Login</a>
 
       <div id="search-toggler" class="fas fa-search"></div>
 
@@ -38,476 +41,63 @@
 </header>
 
 <div class="side-bar">
-
    <nav class="navbar">
+      <div id="close-btn"><i class="fas fa-angle-left"></i> Close menu</div>
 
-      <div id="close-btn"><i class="fas fa-angle-left"></i> close menu</div>
+      <a href="index.html">Home</a>
+      <a href="#">Most Popular</a>
+      <a href="#">Movies</a>
+      <a href="#">Subbed Anime</a>
+      <a href="#">Dubbed Anime</a>
 
-      <a href="home.html">home</a>
-      <a href="#">most popular</a>
-      <a href="#">movies</a>
-      <a href="#">subbed anime</a>
-      <a href="#">dubbed anime</a>
-      <a href="#">ONAs</a>
-      <a href="#">OVAs</a>
-      <a href="#">specials</a>
-
-      <div class="title">genere</div>
-
-      <div class="row">
-         <a href="#">action</a>
-         <a href="#">adventure</a>
-         <a href="#">cars</a>
-         <a href="#">comedy</a>
-         <a href="#">crime</a>
-         <a href="#">comic</a>
-         <a href="#">demons</a>
-         <a href="#">drama</a>
-         <a href="#">family</a>
-         <a href="#">fantacy</a>
-         <a href="#">game</a>
-         <a href="#">gore</a>
-         <a href="#">harem</a>
-         <a href="#">historical</a>
-         <a href="#">horor</a>
-         <a href="#">isekai</a>
-         <a href="#">magic</a>
-         <a href="#">martial arts</a>
-         <a href="#">mecha</a>
-         <a href="#">military</a>
-         <a href="#">music</a>
-         <a href="#">mystery</a>
-         <a href="#">parody</a>
-         <a href="#">police</a>
-         <a href="#">psychological</a>
-         <a href="#">romance</a>
-         <a href="#">samurai</a>
-         <a href="#">school</a>
-         <a href="#">sci-fi</a>
-         <a href="#">seinen</a>
-         <a href="#">shoujo</a>
-         <a href="#">shounen</a>
-         <a href="#">slice of life</a>
-         <a href="#">space</a>
-         <a href="#">sports</a>
-         <a href="#">super power</a>
-         <a href="#">supernatural</a>
-         <a href="#">thriller</a>
-         <a href="#">vampire</a>
-      </div>
-
+      <div class="title">Genre</div>
    </nav>
-
 </div>
 
 <div class="hero">
 
    <div class="hero-slider swiper">
-
       <div class="swiper-wrapper">
 
+         <!-- 🔥 FIXED IMAGE PATH -->
          <div class="slide swiper-slide" style="background:url('images/hero-1.jpg') center/cover no-repeat">
             <section class="content">
                <div>
-                  <span>#1 trending</span>
-                  <h3>demon slayers</h3>
-                  <div class="flex">
-                     <p><i class="fas fa-play"></i>TV</p>
-                     <p><i class="fas fa-clock"></i>24m</p>
-                     <p><i class="fas fa-film"></i>24</p>
-                     <p><i class="fas fa-microphone"></i>24</p>
-                  </div>
+                  <span>#1 Trending</span>
+                  <h3>Demon Slayer</h3>
                   <div class="buttons">
-                     <a href="watch.html" class="btn"><i class="fas fa-play"></i> watch now</a>
-                     <a href="anime_details.html">details <i class="fas fa-angle-right"></i></a>
+                     <a href="watch.html" class="btn">Watch Now</a>
+                     <a href="anime_details.html">Details</a>
                   </div>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti consectetur ab officiis odit non....</p>
-               </div>
-            </section>
-         </div>
-
-         <div class="slide swiper-slide" style="background:url('images/hero-2.jpg') center/cover no-repeat">
-            <section class="content">
-               <div>
-                  <span>#2 trending</span>
-                  <h3>blue lock</h3>
-                  <div class="flex">
-                     <p><i class="fas fa-play"></i>TV</p>
-                     <p><i class="fas fa-clock"></i>24m</p>
-                     <p><i class="fas fa-film"></i>24</p>
-                     <p><i class="fas fa-microphone"></i>24</p>
-                  </div>
-                  <div class="buttons">
-                     <a href="#" class="btn"><i class="fas fa-play"></i> watch now</a>
-                     <a href="#">details <i class="fas fa-angle-right"></i></a>
-                  </div>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti consectetur ab officiis odit non....</p>
-               </div>
-            </section>
-         </div>
-
-         <div class="slide swiper-slide" style="background:url('images/hero-3.jpg') center/cover no-repeat">
-            <section class="content">
-               <div>
-                  <span>#3 trending</span>
-                  <h3>jujutsu kaisen</h3>
-                  <div class="flex">
-                     <p><i class="fas fa-play"></i>TV</p>
-                     <p><i class="fas fa-clock"></i>24m</p>
-                     <p><i class="fas fa-film"></i>24</p>
-                     <p><i class="fas fa-microphone"></i>24</p>
-                  </div>
-                  <div class="buttons">
-                     <a href="#" class="btn"><i class="fas fa-play"></i> watch now</a>
-                     <a href="#">details <i class="fas fa-angle-right"></i></a>
-                  </div>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti consectetur ab officiis odit non....</p>
-               </div>
-            </section>
-         </div>
-
-         <div class="slide swiper-slide" style="background:url('images/hero-4.jpg') center/cover no-repeat">
-            <section class="content">
-               <div>
-                  <span>#4 trending</span>
-                  <h3>Frieren: Beyond Journey's End</h3>
-                  <div class="flex">
-                     <p><i class="fas fa-play"></i>TV</p>
-                     <p><i class="fas fa-clock"></i>24m</p>
-                     <p><i class="fas fa-film"></i>24</p>
-                     <p><i class="fas fa-microphone"></i>24</p>
-                  </div>
-                  <div class="buttons">
-                     <a href="#" class="btn"><i class="fas fa-play"></i> watch now</a>
-                     <a href="#">details <i class="fas fa-angle-right"></i></a>
-                  </div>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti consectetur ab officiis odit non....</p>
-               </div>
-            </section>
-         </div>
-
-         <div class="slide swiper-slide" style="background:url('images/hero-5.jpg') center/cover no-repeat">
-            <section class="content">
-               <div>
-                  <span>#5 trending</span>
-                  <h3>Mushoku Tensei</h3>
-                  <div class="flex">
-                     <p><i class="fas fa-play"></i>TV</p>
-                     <p><i class="fas fa-clock"></i>24m</p>
-                     <p><i class="fas fa-film"></i>24</p>
-                     <p><i class="fas fa-microphone"></i>24</p>
-                  </div>
-                  <div class="buttons">
-                     <a href="#" class="btn"><i class="fas fa-play"></i> watch now</a>
-                     <a href="#">details <i class="fas fa-angle-right"></i></a>
-                  </div>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti consectetur ab officiis odit non....</p>
                </div>
             </section>
          </div>
 
       </div>
-
-      <div class="swiper-pagination"></div>
-
    </div>
 
 </div>
 
 <section class="trending">
-
-   <h1 class="heading">most popular</h1>
-
-   <div class="trending-slider posts-container">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide post">
-            <div class="image">
-               <img src="images/img-1.jpg" alt="">
-               <p class="type">TV</p>
-               <p class="caption">sub</p>
-            </div>
-            <h3><a href="#">solo leveling</a></h3>
-         </div>
-
-         <div class="swiper-slide post">
-            <div class="image">
-               <img src="images/img-2.jpg" alt="">
-               <p class="type">TV</p>
-               <p class="caption">sub</p>
-            </div>
-            <h3><a href="#">dangers in my heart</a></h3>
-         </div>
-
-         <div class="swiper-slide post">
-            <div class="image">
-               <img src="images/img-3.jpg" alt="">
-               <p class="type">TV</p>
-               <p class="caption">sub</p>
-            </div>
-            <h3><a href="#">chainsaw man</a></h3>
-         </div>
-
-         <div class="swiper-slide post">
-            <div class="image">
-               <img src="images/img-4.jpg" alt="">
-               <p class="type">TV</p>
-               <p class="caption">sub</p>
-            </div>
-            <h3><a href="#">bleach</a></h3>
-         </div>
-
-         <div class="swiper-slide post">
-            <div class="image">
-               <img src="images/img-5.jpg" alt="">
-               <p class="type">TV</p>
-               <p class="caption">sub</p>
-            </div>
-            <h3><a href="#">one piece</a></h3>
-         </div>
-
-         <div class="swiper-slide post">
-            <div class="image">
-               <img src="images/img-6.jpg" alt="">
-               <p class="type">TV</p>
-               <p class="caption">sub</p>
-            </div>
-            <h3><a href="#">naruto</a></h3>
-         </div>
-
-      </div>
-
-   </div>
-
-</section>
-
-<section class="latest">
-
-   <h1 class="heading">latest release</h1>
+   <h1 class="heading">Most Popular</h1>
 
    <div class="posts-container">
-
       <div class="post">
-         <div class="image">
-            <img src="images/img-7.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="anime_details.html">demon slayers</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
+         <img src="images/img-1.jpg" alt="">
+         <h3>Solo Leveling</h3>
       </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-8.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">no longer allowed in another world</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-9.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">rising of sheild hero</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-10.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">hunter x hunter</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-11.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">my hero academia</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-12.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">one punch man</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-13.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">blue lock</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-14.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">jujutsu kaisen</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-15.jpg" alt="">
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">farming life in another world</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
-      <div class="post">
-         <div class="image">
-            <img src="images/img-16.jpg" alt="">
-            
-            <p class="type">TV</p>
-            <p class="caption">sub</p>
-         </div>
-         <h3><a href="#">black clover</a></h3>
-         <div class="info">
-            <span><i class="fas fa-play"></i> ep 1</span>
-            <span><i class="fas fa-clock"></i> 24m</span>
-         </div>
-      </div>
-
    </div>
-
-   <div class="button">
-      <a href="#" class="btn">view more</a>
-   </div>
-
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <footer class="footer">
-
    <section>
-
-      <div class="list">
-         <h3>A-Z LIST</h3>
-         <p>searching order by alphabet name A to Z</p>
-         <div class="list-links">
-            <a href="#">all</a>
-            <a href="#">#</a>
-            <a href="#">0-9</a>
-            <a href="#">a</a>
-            <a href="#">b</a>
-            <a href="#">c</a>
-            <a href="#">d</a>
-            <a href="#">e</a>
-            <a href="#">f</a>
-            <a href="#">g</a>
-            <a href="#">h</a>
-            <a href="#">i</a>
-            <a href="#">j</a>
-            <a href="#">k</a>
-            <a href="#">l</a>
-            <a href="#">m</a>
-            <a href="#">n</a>
-            <a href="#">o</a>
-            <a href="#">p</a>
-            <a href="#">q</a>
-            <a href="#">r</a>
-            <a href="#">s</a>
-            <a href="#">t</a>
-            <a href="#">u</a>
-            <a href="#">v</a>
-            <a href="#">w</a>
-            <a href="#">x</a>
-            <a href="#">y</a>
-            <a href="#">z</a>
-         </div>
+      <div class="credit">
+         © 2026 <span>MojoAnime</span> | All rights reserved
       </div>
-
-      <div class="row">
-         <div class="extra-links">
-            <a href="#">terms of use</a>
-            <a href="#">our policy</a>
-            <a href="#">contact us</a>
-            <a href="#">feedback</a>
-         </div>
-         <div class="share">
-            <a href="#" class="fab fa-youtube"></a>
-            <a href="#" class="fab fa-whatsapp"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-instagram"></a>
-         </div>
-      </div>
-
-      <div class="credit">copyright &copy; 2025 by <span>mr. web designer</span> | all rights reserved.</div>
-
    </section>
-
 </footer>
 
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <script src="js/script.js"></script>   
 
 </body>
