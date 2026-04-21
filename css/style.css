@@ -1270,3 +1270,25 @@ section{
    background-position: right center !important;
    background-size: cover;
 }
+/* ===== FORCE RIGHT SIDE HERO ===== */
+
+.hero .slide{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: right center;
+}
+
+.hero .slide .content{
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 8%;
+}
+
+.hero .slide .text-box{
+   max-width: 500px;
+   text-align: left;
+}
