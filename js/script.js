@@ -79,3 +79,34 @@ var swiper = new Swiper(".trending-slider", {
       disableOnInteraction: false,
    },
 });
+// ================= ANIME DYNAMIC SYSTEM =================
+
+// only run on watch page
+if (window.location.pathname.includes("watch.html")) {
+
+   const params = new URLSearchParams(window.location.search);
+   const id = params.get("id");
+   const ep = params.get("ep");
+
+   fetch("data/anime.json")
+      .then(res => res.json())
+      .then(data => {
+
+         const anime = data.find(a => a.id === id);
+
+         if (!anime) return;
+
+         const episode = anime.episodes.find(e => e.ep == ep);
+
+         if (!episode) return;
+
+         // change video
+         document.querySelector("video").src = episode.servers[0];
+
+         // change title
+         document.querySelector(".video p").innerText =
+            anime.title + " Episode " + ep + " [Sub]";
+
+      })
+      .catch(err => console.log(err));
+}
