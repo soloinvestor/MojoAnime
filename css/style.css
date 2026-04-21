@@ -1194,7 +1194,7 @@ section{
 }
 
 /* Dark gradient for readability */
-..hero .slide::before{
+.hero .slide::before{
    content: '';
    position: absolute;
    inset: 0;
