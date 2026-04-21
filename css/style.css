@@ -1195,3 +1195,44 @@ section{
 .header .btn{
    margin-left: auto;
 }
+/* ===== FORCE FULL EDGE HEADER ===== */
+
+.header{
+   width: 100%;
+   padding: 0; /* remove inherited padding */
+}
+
+.header .flex{
+   width: 100%;
+   padding: 0 1rem; /* optional small spacing */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/* LEFT SIDE */
+.header .left{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+/* CENTER SEARCH */
+.header .search-form{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+/* RIGHT LOGIN */
+.header .btn{
+   flex-shrink: 0;
+}
+
+/* REMOVE GLOBAL SECTION EFFECT */
+.header section,
+.header .flex{
+   max-width: 100% !important;
+}
