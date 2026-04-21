@@ -105,8 +105,9 @@ section{
 .header .search-form{
     flex: 1;
     max-width: 500px;
-    margin: 0 auto;   
-}
+    margin: 0 auto;
+}  
+
 
 .header .btn{
     text-align: right;
