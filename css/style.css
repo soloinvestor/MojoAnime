@@ -294,33 +294,40 @@ section{
 
 .hero .slide{
    position: relative;
-   min-height: 100vh;
+   height: 100vh;
+   width: 100%;
 
    background-size: cover;
-   background-position: right center; /* 🔥 move image to right */
+   background-position: center;
    background-repeat: no-repeat;
 }
 
 .hero .slide::before{
    content: '';
    position: absolute;
-   top: 0; left: 0; right: 0; bottom: 0;
+   inset: 0;
 
    background: linear-gradient(
-      to left,
-      rgba(0,0,0,0.8) 10%,
-      rgba(0,0,0,0.6) 30%,
-      rgba(0,0,0,0.2) 60%,
-      transparent 90%
+      to right,
+      rgba(0,0,0,0.9) 25%,
+      rgba(0,0,0,0.6) 50%,
+      transparent 80%
    );
 
    z-index: 1;
 }
 
 
-
 .hero .slide .content > div{
    max-width: 500px;
+}
+.hero .slide .content{
+   position: absolute;
+   top: 55%;
+   left: 6%;
+   transform: translateY(-50%);
+   width: 40%;
+   z-index: 2;
 }
 .hero .slide .content span{
    color: var(--main-color);
