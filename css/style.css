@@ -1235,3 +1235,46 @@ section{
    padding: .6rem 1.5rem;
    border-radius: .5rem;
 }
+/* PREMIUM HEADER UPGRADE */
+.header{
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+
+   background: rgba(0,0,0,0.6);
+   backdrop-filter: blur(10px);
+   border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Logo stronger */
+.header .logo{
+   font-size: 2.4rem;
+   font-weight: 700;
+   letter-spacing: 1px;
+}
+
+/* Search bar glow */
+.header .search-bar{
+   background: rgba(255,255,255,0.05);
+   border: 1px solid rgba(255,255,255,0.1);
+}
+
+.header .search-bar:focus-within{
+   border-color: var(--main-color);
+   box-shadow: 0 0 10px rgba(255,221,149,0.3);
+}
+
+/* Login button premium */
+.header .btn.login-btn{
+   background: var(--main-color);
+   color: var(--black);
+   font-weight: 600;
+   transition: 0.3s ease;
+}
+
+.header .btn.login-btn:hover{
+   background: var(--white);
+   transform: translateY(-2px);
+}
