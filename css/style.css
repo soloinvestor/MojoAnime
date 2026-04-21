@@ -275,7 +275,13 @@ section{
 
 .hero .slide::before{
    content: '';
-   background:radial-gradient(circle at 100% 50%, transparent 30%, rgba(0,0,0,.9) 60%);
+   background: linear-gradient(
+   to right,
+   rgba(0,0,0,0.95) 20%,
+   rgba(0,0,0,0.6) 50%,
+   rgba(0,0,0,0.2) 80%,
+   transparent 100%
+);
    position: absolute;
    top: 0; left: 0; right: 0; bottom: 0;
    z-index: 1;
