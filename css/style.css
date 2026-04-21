@@ -45,9 +45,14 @@ body{
 }
 
 section{
-   padding: 2rem;
    max-width: 1200px;
    margin: 0 auto;
+   padding: 0 2rem;
+}
+
+/* EXCLUDE HEADER */
+.header{
+   padding: 0 !important;
 }
 
 .btn{
