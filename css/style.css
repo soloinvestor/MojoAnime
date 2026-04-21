@@ -89,10 +89,11 @@ section{
 }
 
 .header .flex{
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
 }
-
 #menu-btn{
    font-size: 2.5rem;
    cursor: pointer;
@@ -100,9 +101,6 @@ section{
    margin-right: 1rem;
 }
 
-.header .flex .logo{
-   margin-right: auto;
-}
 
 .header .flex .logo a{
    font-size: 2.5rem;
