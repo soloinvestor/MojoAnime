@@ -325,12 +325,11 @@ section{
 .hero .slide .content{
    position: absolute;
    top: 55%;
-   right: 6%;   /* FIX */
-   left: auto;  /* FIX */
+   left: 6%;
    transform: translateY(-50%);
    width: 40%;
    z-index: 2;
-   text-align: right; /* optional better look */
+}
 }
 .hero .slide .content span{
    color: var(--main-color);
