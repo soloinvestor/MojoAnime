@@ -287,6 +287,42 @@
 </footer>
 
 <script src="js/script.js"></script>   
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const animeId = urlParams.get("id");
 
+async function loadAnime() {
+   const res = await fetch(`http://localhost:3000/anime/${animeId}`);
+   const data = await res.json();
+
+   // TITLE
+   document.querySelector(".video p").innerText = data.title;
+
+   // LOAD FIRST EPISODE
+   if(data.seasons.length > 0){
+      const firstEp = data.seasons[0].episodes[0];
+      document.querySelector("video").src = firstEp.videoUrl;
+   }
+
+   // LOAD EPISODES
+   const episodeContainer = document.querySelector(".drops .flex");
+   episodeContainer.innerHTML = "";
+
+   data.seasons.forEach(season => {
+      season.episodes.forEach(ep => {
+         const a = document.createElement("a");
+         a.innerText = ep.episodeNumber;
+
+         a.onclick = () => {
+            document.querySelector("video").src = ep.videoUrl;
+         };
+
+         episodeContainer.appendChild(a);
+      });
+   });
+}
+
+loadAnime();
+</script>
 </body>
 </html>
