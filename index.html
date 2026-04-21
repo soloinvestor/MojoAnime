@@ -516,3 +516,34 @@
 
 </body>
 </html>
+/* ===== FINAL HEADER FULL WIDTH FIX ===== */
+
+.header{
+   width: 100%;
+}
+
+.header .flex{
+   width: 100%;
+}
+
+.header .flex,
+.header .left,
+.header .search-form,
+.header .btn{
+   position: relative;
+   z-index: 10;
+}
+
+/* THIS IS THE REAL FIX */
+.header{
+   max-width: 100% !important;
+}
+
+.header .flex{
+   max-width: 100% !important;
+}
+
+.header .search-form{
+   display: flex;
+   justify-content: center;
+}
