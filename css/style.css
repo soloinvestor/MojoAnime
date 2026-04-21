@@ -96,10 +96,10 @@ section{
     padding: 1rem 3rem;
 }
    .left{
-    display: flex: 1;
+    display: flex;
     align-items: center;
     gap: 1rem;
-    flex: 0;   
+    flex: 1;
 }
 
 .header .search-form{
