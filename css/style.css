@@ -1161,4 +1161,50 @@ section{
 
    }
 
+/* ===== FINAL HEADER FIX ===== */
 
+/* override section limit for header */
+.header section{
+   max-width: 100% !important;
+   margin: 0 !important;
+}
+
+/* main layout */
+.header .flex{
+   display: flex !important;
+   align-items: center !important;
+   justify-content: space-between !important;
+   padding: 1rem 2rem !important;
+   width: 100% !important;
+}
+
+/* left (menu + logo) */
+.left{
+   display: flex !important;
+   align-items: center !important;
+   gap: 1rem !important;
+   flex: 1 !important;
+}
+
+/* center search */
+.header .search-form{
+   flex: 2 !important;
+   max-width: 500px !important;
+   margin: 0 auto !important;
+   display: flex !important;
+   align-items: center !important;
+   gap: 1rem !important;
+}
+
+/* right login */
+.header .btn{
+   flex: 1 !important;
+   text-align: right !important;
+}
+
+/* REMOVE any absolute positioning (important fix) */
+.header .flex .search-form{
+   position: static !important;
+   transform: none !important;
+   left: auto !important;
+}
