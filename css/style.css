@@ -298,7 +298,7 @@ section{
    width: 100%;
 
    background-size: cover;
-   background-position: center;
+   background-position: left center; /* FIX */
    background-repeat: no-repeat;
 }
 
@@ -324,10 +324,12 @@ section{
 .hero .slide .content{
    position: absolute;
    top: 55%;
-   left: 6%;
+   right: 6%;   /* FIX */
+   left: auto;  /* FIX */
    transform: translateY(-50%);
    width: 40%;
    z-index: 2;
+   text-align: right; /* optional better look */
 }
 .hero .slide .content span{
    color: var(--main-color);
