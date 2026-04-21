@@ -92,11 +92,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    padding: 0 2rem;
+    gap: 0.5rem;
+    padding: 1rem 3rem;
 }
    .left{
-    display: flex;
+    display: flex: 1;
     align-items: center;
     gap: 1rem;
     flex: 0;   
@@ -121,7 +121,7 @@ section{
 }
 
 
-.header .flex .logo a{
+.header .flex .logo {
    font-size: 2.5rem;
    font-weight: bold;
    font-style:italic ;
@@ -129,8 +129,8 @@ section{
 }
 
 .header .btn{
-   margin-top: 0;
-   margin-left: auto;
+    margin-left: auto;
+    text-align: right;
 }
 
 .header .flex .search-form{
@@ -145,8 +145,8 @@ section{
    border-radius: .5rem;
    display: flex;
    align-items: center;
-   gap: 1rem;
-   width: 50rem;
+  width: 100%;
+max-width: 500px;
 }
 
 .header .flex .search-bar .box{
