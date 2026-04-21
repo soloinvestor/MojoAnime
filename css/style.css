@@ -1292,3 +1292,21 @@ section{
    max-width: 500px;
    text-align: left;
 }
+/* ===== FINAL WORKING HERO FIX ===== */
+
+.hero .slide{
+   position: relative;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: right center;
+}
+
+/* MOVE TEXT TO RIGHT */
+.hero .slide .content{
+   position: absolute;
+   top: 50%;
+   right: 8%;
+   transform: translateY(-50%);
+   width: 500px;
+   z-index: 2;
+}
