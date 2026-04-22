@@ -5,15 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MojoAnime</title>
 
-<base href="/MojoAnime/">
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
+
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="flex">
 
@@ -30,19 +29,21 @@
     </div>
 
     <a href="login.html" class="btn">
-      <i class="fas fa-user"></i> login
+      <i class="fas fa-user"></i> Login
     </a>
 
   </div>
 </header>
 
+<!-- ================= SIDEBAR ================= -->
 <div class="side-bar">
    <nav class="navbar">
-      <div id="close-btn"><i class="fas fa-angle-left"></i> close menu</div>
-      <a href="index.html">home</a>
+      <div id="close-btn"><i class="fas fa-angle-left"></i> Close</div>
+      <a href="index.html">Home</a>
    </nav>
 </div>
 
+<!-- ================= HERO ================= -->
 <div class="hero">
    <div class="hero-slider swiper">
       <div class="swiper-wrapper">
@@ -50,11 +51,11 @@
          <div class="slide swiper-slide" style="background:url('images/hero-1.jpg') center/cover no-repeat">
             <section class="content">
                <div>
-                  <span>#1 trending</span>
-                  <h3>demon slayers</h3>
+                  <span>#1 Trending</span>
+                  <h3>Demon Slayer</h3>
 
                   <div class="buttons">
-                     <a href="watch.html?id=demon-slayer&ep=1" class="btn">
+                     <a href="watch.html" class="btn">
                         <i class="fas fa-play"></i> Watch Now
                      </a>
                   </div>
@@ -67,6 +68,17 @@
    </div>
 </div>
 
+<!-- ================= DYNAMIC ANIME SECTION ================= -->
+<section class="latest">
+
+   <h1 class="heading">Latest Anime</h1>
+
+   <!-- IMPORTANT: JS WILL FILL THIS -->
+   <div class="posts-container"></div>
+
+</section>
+
+<!-- ================= SCRIPTS ================= -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 
